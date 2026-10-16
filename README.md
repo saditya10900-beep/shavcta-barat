@@ -1,1 +1,0 @@
-# shavcta-barat

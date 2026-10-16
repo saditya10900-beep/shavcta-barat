@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swachh Bharat | Aditya Singh</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5fff5;
+      color: #18351e;
+    }
+
+    header {
+      background: #13823b;
+      color: white;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      padding: 70px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #fff4d8, #e4ffe8);
+    }
+
+    .flag {
+      font-size: 48px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 7vw, 60px);
+      color: #13823b;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #ef8620;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: #13823b;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #095c28;
+    }
+
+    .section {
+      padding: 55px 8%;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #13823b;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px #00000012;
+    }
+
+    .card .emoji {
+      font-size: 40px;
+    }
+
+    .card h3 {
+      margin: 15px 0;
+      color: #13823b;
+    }
+
+    #pledge {
+      background: #e7f8e9;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #13823b;
+    }
+
+    footer {
+      background: #153d22;
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>🇮🇳 Swachh Bharat</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#pledge">Pledge</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="flag">🇮🇳</div>
+
+    <h1>स्वच्छ भारत, <span>स्वस्थ भारत</span></h1>
+
+    <p>
+      Safai apnao, desh ko sundar banao.
+      Aao milkar apne ghar, gali, gaon aur
+      Bharat ko saaf rakhne ka sankalp lein.
+    </p>
+
+    <a href="#pledge" class="btn">
+      स्वच्छता की शपथ लें
+    </a>
+  </section>
+
+  <section class="section" id="about">
+    <h2>Hamare 3 Sankalp</h2>
+
+    <div class="cards">
+      <div class="card">
+        <div class="emoji">🗑️</div>
+        <h3>Kachra Dustbin Mein</h3>
+        <p>Kachra sadak par nahi, hamesha dustbin mein daalein.</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">♻️</div>
+        <h3>Recycling Apnayein</h3>
+        <p>Geela aur sookha kachra alag-alag rakhein.</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🌱</div>
+        <h3>Swachh Paryavaran</h3>
+        <p>Apne aaspaas safai rakhein aur prakriti ko bachayein.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pledge">
+    <h2>Swachhata Ki Shapath</h2>
+
+    <p>
+      Main apne aaspaas safai rakhunga aur
+      doosron ko bhi swachhata ke liye prerit karunga.
+    </p>
+
+    <br>
+
+    <button class="btn" onclick="takePledge()">
+      Main Shapath Leta Hoon 🇮🇳
+    </button>
+
+    <p id="message"></p>
+  </section>
+
+  <footer>
+    <p>🇮🇳 Ek Kadam Swachhata Ki Ore 🇮🇳</p>
+    <p>Website created by Aditya Singh</p>
+    <p>© 2026 Aditya Singh</p>
+  </footer>
+
+  <script>
+    function takePledge() {
+      document.getElementById("message").textContent =
+        "Dhanyavaad! Aaiye, Bharat ko swachh banayein. 🇮🇳";
+    }
+  </script>
+
+</body>
+</html>
